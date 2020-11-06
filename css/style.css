@@ -1,0 +1,358 @@
+body{
+  font-family: 'Georgia', serif; /* Test for this*/
+  margin: 0;
+  padding: 0;
+  font-size: 12pt; /* test for this! Make all sizes em or rem */
+  background-image: url('images/pattern-background.jpg');
+}
+
+h1{
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 2;
+  background-color: #3CB371;
+  color: #FFFFFF;
+  font-family: 'Georgia', serif;
+}
+
+.logo{
+  width: 75px;
+  height: 75px;
+  align-items: center;
+}
+
+h2{
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Arial Black', sans-serif; 
+}
+h3{
+  font-size: 1.3em;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Georgia', serif;
+}
+p {
+  padding: 15px;
+  text-align: left;
+  font-family: 'Georgia', serif;
+}
+.current{
+text-transform: uppercase;
+}
+a.skip{
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: #3CB371;
+  color: white;
+  padding: 10px;
+}
+footer >p{
+  text-align: center;
+  font-size: 14pt
+}
+
+.me{
+  text-align: center; 
+}
+
+.me > img{
+  max-width: 350px;
+  border: 7px 	#3CB371 solid;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.image1{
+  grid-column: 1/span 1;
+  width: 150px;
+  height: 150px;
+}
+  
+.image2{
+  grid-column: 2/span 1;
+  width: 150px;
+  height: 150px
+}
+  
+.image3{
+  grid-column: 3/span 1;
+  width: 150px;
+  height: 150px
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+/* Gallery! */
+.gallery{
+  min-height: 600px;
+  /*Your code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+
+}
+
+.gallery > img{
+  border: 5px 	#3CB371 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+/* Navbar */
+header{
+  border-bottom: 3px solid 	#3CB371;
+  /*Your  code here again.*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.nav_links{
+  /*Your code here again.*/
+  font-family: 'Arial Black', sans-serif; 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+  color: #50C7C7;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+.shortbread{
+  padding: 15px;
+}
+
+.shortbread >h4{
+  font-size: 20pt;
+  padding: 5px
+}
+.shortbread > ol{
+  font-family: 'Georgia', serif;
+  padding: 0px 50px;
+}
+
+.shortbread > img{
+  max-width: 350px;
+  border: 10px 	#3CB371 solid;
+  margin: 10px;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Arial Black', sans-serif; 
+}
+
+form {
+  border: 3px solid #3CB371;
+}
+
+legend{ 
+  font-size: 125%;
+  font-style:italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label{
+  padding: 5px;
+  display: inline-block;
+  margin-right:10px;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 35vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  background-color: #3CB371;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
+}
+
+
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
+}
+
+@media screen and (min-width: 850px){
+
+  /* Cards! */
+  .card {
+    /*Your  code here again.*/
+    flex-basis: 225px;
+  }
+
+  .card_big{
+    -webkit-transform: scaleX(1.12);
+            transform: scaleX(1.12);
+  }
+
+  /* Navbar */
+  header{
+    /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    /*Your code here again.*/  
+    flex-direction: row;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+@media print { 
+  .card {
+    flex-basis: 200px;  
+  }
+  /*Your code here again.*/
+  /*You will want four selectors*/  
+  body{
+    background-image: none;
+  }
+  .pricing{
+    align-items: flex-start;
+  }
+  .gallery{
+    display:none;
+  }
+  #gallery{
+    display: none
+  }
+}
+
+/*Your code here again.*/ 
+/*Add media query to handle reduced-motion*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  #logo{
+    animation:none;
+  }
+}

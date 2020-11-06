@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/vegan-food-logo.png"/>
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel = "background" type="image/jpg" href="images/pattern-background.jpg">
+    <title>Fresh & Friendly Foods</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <img src="images/vegan-food-logo.png" alt="logo" class = "logo">
+        <nav style = "width: 100%;">
+            <ul class="nav_links">
+              <li class="nav_item"><a href="index.html">About</a></li>
+              <li class="nav_item"><a href="gallery.html">Gallery</a></li>
+              <li class="nav_item"><a href="recipe.html">Recipes</a></li>
+              <li class="nav_item"><a href="contact.html" class = "current">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main>
+    <h1>Fresh & Friendly Foods</h1>
+    <h2 id = "contact">Contact</h2>
+    <p>Leave your contact information and any questions or comments you may here and I'll get back to you as soon as possible!</p>
+      <div class="contact"> 
+        <form action="https://formspree.io/f/mqkgbzdn" method="POST">
+          <fieldset>
+            <label for = "name_id">Your Name</label>
+            <input type="text" 
+            id = "name_id"
+            placeholder="Enter Your Name" required
+            name = "name">
+        
+            <label for = "email_id">Your Email</label>
+            <input type="email"
+            name = "email"
+            id = "email_id"
+            >
+        
+        
+            <label for = "phone_id">Your Phone Number</label>
+            <input type="tel"
+            placeholder="Enter Your Number (Format: 123-456-7890)"
+            name = "number"
+            id = "phone_id">
+        
+        
+           <label for="msg">Leave A Message</label>
+        
+            <textarea></textarea>
+            
+        
+            <input type="submit" 
+            value = "Send me a message">
+          </fieldset>
+         </form>
+      </div>
+      </main>
+
+    <footer>
+      <p>Fresh & Friendly Foods Blog <br/>
+        &copy; Margeaux Fortin - Web Design 2020</p>
+    </footer>
+  </body>
+</html>
